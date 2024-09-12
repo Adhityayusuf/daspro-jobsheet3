@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Siakad13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,13 +23,12 @@ public class Siakad13 {
         nilaitugas = sc.nextDouble();
         System.out.print("Masukan nilai ujian: ");
         nilaiujian = sc.nextDouble();
-        sc.close();
 
         nilaiAkhir = (nilaikuis + nilaitugas + nilaiujian) / 3;
-         
+
         System.out.println("Nama: " + nama + "Nim: " + nim);
-        System.out.println("Kelas: " + kelas +"Absen: " + absen);
+        System.out.println("Kelas: " + kelas + "Absen: " + absen);
         System.out.println("Nilai Akhir: " + nilaiAkhir);
-        
+
     }
 }
