@@ -7,28 +7,26 @@ public class Siakad13 {
         char kelas;
         byte absen;
         double nilaikuis, nilaitugas, nilaiujian, nilaiAkhir;
-        //Deklarasi
 
-        System.out.println("Masukan nama: ");
+        System.out.print("Masukan nama: ");
         nama = sc.nextLine();
-        System.out.println("Masukan Nim: ");
+        System.out.print("Masukan Nim: ");
         nim = sc.nextLine();
-        System.out.println("Masukan Kelas: ");
+        System.out.print("Masukan Kelas: ");
         kelas = sc.nextLine().charAt(0);
-        System.out.println("Masukan nomor absen: ");
+        System.out.print("Masukan nomor absen: ");
         absen = sc.nextByte();
-        System.out.println("Masukan nilai kuis: ");
+        System.out.print("Masukan nilai kuis: ");
         nilaikuis = sc.nextDouble();
-        System.out.println("Masukan nilai tugas: ");
+        System.out.print("Masukan nilai tugas: ");
         nilaitugas = sc.nextDouble();
-        System.out.println("Masukan nilai ujian: ");
+        System.out.print("Masukan nilai ujian: ");
         nilaiujian = sc.nextDouble();
-        //Scanner nya
 
         nilaiAkhir = (nilaikuis + nilaitugas + nilaiujian) / 3;
          
         System.out.println("Nama: " + nama + "Nim: " + nim);
-        System.out.println("Kelas: " + kelas " Absen: " + absen);
+        System.out.println("Kelas: " + kelas +"Absen: " + absen);
         System.out.println("Nilai Akhir: " + nilaiAkhir);
         
     }
