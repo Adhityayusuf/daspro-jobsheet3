@@ -22,6 +22,7 @@ public class Siakad13 {
         nilaitugas = sc.nextDouble();
         System.out.print("Masukan nilai ujian: ");
         nilaiujian = sc.nextDouble();
+        sc.close();
 
         nilaiAkhir = (nilaikuis + nilaitugas + nilaiujian) / 3;
          
