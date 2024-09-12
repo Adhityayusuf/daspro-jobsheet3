@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Siakad13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String nama, nim;
+        char kelas;
+        byte absen;
+        double nilaikuis, nilaitugas, nilaiujian, nilaiAkhir;
+        //Deklarasi
+
+        System.out.println("Masukan nama: ");
+        nama = sc.nextLine();
+        System.out.println("Masukan Nim: ");
+        nim = sc.nextLine();
+        System.out.println("Masukan Kelas: ");
+        kelas = sc.nextLine().charAt(0);
+        System.out.println("Masukan nomor absen: ");
+        absen = sc.nextByte();
+        System.out.println("Masukan nilai kuis: ");
+        nilaikuis = sc.nextDouble();
+        System.out.println("Masukan nilai tugas: ");
+        nilaitugas = sc.nextDouble();
+        System.out.println("Masukan nilai ujian: ");
+        nilaiujian = sc.nextDouble();
+        //Scanner nya
+
+        nilaiAkhir = (nilaikuis + nilaitugas + nilaiujian) / 3;
+         
+        System.out.println("Nama: " + nama + "Nim: " + nim);
+        System.out.println("Kelas: " + kelas " Absen: " + absen);
+        System.out.println("Nilai Akhir: " + nilaiAkhir);
+        
+    }
+}
